@@ -8,7 +8,13 @@ import {
 } from "react-icons/md";
 import MessageBox from "./MessageBox";
 
-export default function MessengerCard() {
+export default function MessengerCard({
+  incoming,
+  reply,
+}: {
+  incoming: string;
+  reply: string;
+}) {
   return (
     <div className="w-card h-card bg-black rounded-md gpt-shadow pt-4 px-3 flex flex-col">
       <div className="flex mb-10">
@@ -26,14 +32,8 @@ export default function MessengerCard() {
         </div>
       </div>
       <div className="flex flex-1 flex-col space-y-5 px-2">
-        <MessageBox
-          incoming
-          message="Hey, just got back from yoga. Feeling flexible, wanna join?"
-        />
-        <MessageBox
-          incoming={false}
-          message="I'm in the middle of a heated debate with my microwave. Can't leave now."
-        />
+        <MessageBox incoming message={incoming} />
+        <MessageBox incoming={false} message={reply} />
       </div>
       <div className="flex justify-center py-2">
         <MdFavorite
