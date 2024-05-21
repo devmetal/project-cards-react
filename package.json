@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.37.1",
     "clsx": "^2.1.1",
     "firebase": "^10.12.0",
     "react": "19.0.0-beta-26f2496093-20240514",
@@ -28,6 +29,7 @@
     "autoprefixer": "^10.4.19",
     "babel-plugin-react-compiler": "0.0.0-experimental-592953e-20240517",
     "eslint": "^8.57.0",
+    "eslint-plugin-react-compiler": "0.0.0-experimental-c8b3f72-20240517",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
     "postcss": "^8.4.38",
